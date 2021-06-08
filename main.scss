@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+$textAlgn : center;
+$height : 458.5px;
+$fontfamily  : 'Spartan', sans-serif;
+// content right side 
+#content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 35%;
+
+#right{
+  width: 50%;
+  padding: 80px;
+#right-col1{
+  color: hsl(302, 31%, 35%);
+  font-size: 4rem;
+  font-family: $fontfamily;
+  font-weight: 700;
+}
+#right-col2{
+  color:hsl(300, 32%, 52%);
+  font-family: $fontfamily;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+}
+// content left side 
+#left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  #btn1,  #btn2,  #btn3{
+    border-radius: 15px;
+    padding: 25px 50px;
+    margin-top: 30px;
+    transform: translateY(10%);
+    background-color: hsl(300, 24%, 96%);
+    border: none;
+    width: 60%;
+    font-family: $fontfamily;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #btn1{
+    transform: translateX(20%);
+     }
+  #btn2{
+ transform: translateX(40%);
+  }
+  #btn3{
+    transform: translateX(60%);
+  }
+
+}
+}
+// cards
+#main{
+  display: flex;
+  flex-wrap: wrap;
+div{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 29rem;
+  margin-top: 2%;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  margin: 70px;
+h2{
+  color: gold;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+p{
+  color: peachpuff;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+}
+}
+// cards color
+div:nth-child(1) {
+    text-align: $textAlgn;
+    background-color: red;
+    height: $height;
+}
+div:nth-child(2){
+  transform: translateY(10%);
+  text-align: $textAlgn;
+  background-color: sandybrown;
+  height: $height;
+  
+}
+  div:nth-child(3) {
+    transform: translateY(20%);
+    text-align: $textAlgn;
+    background-color: darkcyan;
+    height: $height;
+  }
+  div:nth-child(4) {
+    text-align: $textAlgn;
+    background-color:black;
+    height: $height; 
+  }
+  div:nth-child(5) {
+    transform: translateY(10%);
+    text-align: $textAlgn;
+    background-color:hotpink;
+    height: $height;
+  }
+  div:nth-child(6) {
+    transform: translateY(20%);
+    text-align: $textAlgn;
+      background-color: grey;
+      height: $height;
+  }
+  div:nth-child(7) {
+    text-align: $textAlgn;
+    background-color:blue;
+    height: $height;
+  }
+  div:nth-child(8) {
+    transform: translateY(10%);
+    text-align: $textAlgn;
+      background-color: brown;
+      height: $height;  
+  }
+  div:nth-child(9) {
+    transform: translateY(20%);
+    text-align: $textAlgn;
+    background-color:darkviolet;
+    height: $height;
+  }
+  div:nth-child(10) {
+    display: none;
+  }
+
+@media only screen and(max-width:600px){
+  #content{
+    flex-direction: column;
+    width: 100%;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    #right{
+      width: 100%;
+      padding: 0px;
+      #right-col1{
+        font-size: 2rem;
+      }
+      #right-col2{
+        font-size: 1.3rem;
+      }
+  }
+  #left{
+    width: 100%;
+    padding: 0px;
+    background-image: url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    #btn1,  #btn2,  #btn3{
+      padding: 25px 50px;
+      transform: translateY(0%);
+      width: 100%;
+      font-size: 15px;
+    }
+    #btn1{
+      transform: translateX(0%);
+       }
+    #btn2{
+   transform: translateX(0%);
+    }
+    #btn3{
+      transform: translateX(0%);
+    }
+  }
+}
+#main{
+div{
+  margin: 0px;
+  margin-top: 16%;
+}
+}
+div:nth-child(2){
+  transform: translateY(10%);
+}
+div:nth-child(3) {
+  transform: translateY(0%);
+}
+div:nth-child(5) {
+  transform: translateY(0%);
+}
+div:nth-child(6) {
+  transform: translateY(0%);
+}
+div:nth-child(8) {
+  transform: translateY(0%);
+}
+div:nth-child(9) {
+  transform: translateY(0%);
+}
+}
+
+ 
